@@ -5,7 +5,7 @@ docker rm emphazis-app
 docker rmi luciorq/emphazis-app:latest
 
 # to build
-docker build . -f dockerfile/Dockerfile -t luciorq/emphazis-app:latest
+DOCKER_BUILDKIT=1 docker build . -f dockerfile/Dockerfile -t luciorq/emphazis-app:latest
 
 # to run
 docker run -d \
