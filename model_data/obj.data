@@ -1,0 +1,4 @@
+classes = 1
+train = data/train.txt
+names = ./darknet_3070/data/obj.names
+backup = backup/
