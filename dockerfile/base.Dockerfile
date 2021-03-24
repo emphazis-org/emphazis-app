@@ -29,6 +29,13 @@ RUN Rscript -e 'remotes::install_version("shinycssloaders",upgrade="never")'
 RUN Rscript -e 'remotes::install_version("colourpicker",upgrade="never")'
 RUN Rscript -e 'remotes::install_version("metathis",upgrade="never")'
 RUN Rscript -e 'remotes::install_version("lubridate",upgrade="never")'
+RUN Rscript -e 'remotes::install_version("sys",upgrade="never")'
+RUN Rscript -e 'remotes::install_version("askpass",upgrade="never")'
+RUN Rscript -e 'remotes::install_version("thematic",upgrade="never")'
+
+RUN Rscript -e 'remotes::install_version("reticulate",upgrade="never")'
+
+
 
 # RUN Rscript -e 'remotes::install_version("EBImage",upgrade="never", version = "4.32.0")'
 # RUN Rscript -e 'remotes::install_version("shiny",upgrade="never", version = "1.6.0")'
