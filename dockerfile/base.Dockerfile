@@ -35,8 +35,10 @@ RUN Rscript -e 'remotes::install_version("thematic",upgrade="never")'
 
 RUN Rscript -e 'remotes::install_version("reticulate",upgrade="never")'
 
+RUN Rscript -e 'remotes::install_version("progressr",upgrade="never")'
 
 
+RUN python3 -m pip install tensorflow==1.5
 # RUN Rscript -e 'remotes::install_version("EBImage",upgrade="never", version = "4.32.0")'
 # RUN Rscript -e 'remotes::install_version("shiny",upgrade="never", version = "1.6.0")'
 
